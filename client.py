@@ -7,7 +7,7 @@ Client yang akan meminta request data dari server
 import socket
 import sys
 import pickle
-import shutil
+#import shutil
 
 
 #ini buat setting koneksi

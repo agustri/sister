@@ -59,22 +59,22 @@ while running :
             #server.append(client)
             input.append(client)
 
-        elif s == sys.stdin:
-            #handle standard input
-            test = raw_input("input : ")
-            if (test == 'keluar') :
-                running = 0
-                break
+        #elif s == sys.stdin:
+         #   #handle standard input
+          #  test = raw_input("input : ")
+           # if (test == 'keluar') :
+            #    running = 0
+             #   break
 #fungsi untuk keluar server
         else:
             #handle all other sockets
             data = s.recv(size)
-            if (data == 'keluar') :
-                ret = 'server exit'
-                cobaPickle = pickle.dumps(ret)
-                s.send(cobaPickle)
-                running = 0
-                break
+            #if (data == 'keluar') :
+            #    ret = 'server exit'
+            #    cobaPickle = pickle.dumps(ret)
+            #    s.send(cobaPickle)
+            #    running = 0
+            #    break
 #menyimpan imputan yang di split berdasarkan spasi
             temp = data.split(' ')
             ret = ''
